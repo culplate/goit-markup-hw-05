@@ -500,7 +500,7 @@
 
         <div class="bottom-wrapper">
           <p class="social-m-heading">Subscribe</p>
-          <form class="subscribe-form">
+          <form class="subscribe-form" name="subscribtion_form">
             <input
               class="subscribe-input input"
               type="email"
@@ -525,6 +525,57 @@
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
+
+        <form class="contact-form" name="contact_form">
+          <legend class="contact-title">
+            Leave your contacts and we will call you back
+          </legend>
+
+          <div class="contact-input-wrapper">
+            <label for="user_name" class="contact-label">Name</label>
+            <input id="user_name" type="text" class="contact-input" />
+          </div>
+
+          <div class="contact-input-wrapper">
+            <label for="user_tel" class="contact-label">Phone</label>
+            <input
+              id="user_tel"
+              type="tel"
+              class="contact-input"
+              name="user_tel"
+            />
+          </div>
+
+          <div class="contact-input-wrapper">
+            <label for="user_mail" class="contact-label">Email</label>
+            <input
+              id="user_mail"
+              type="email"
+              class="contact-input"
+              name="user_mail"
+            />
+          </div>
+
+          <div class="contact-input-wrapper">
+            <label for="user_comment" class="contact-label">Comment</label>
+            <textarea
+              id="user_comment"
+              class="contact-input"
+              cols="30"
+              rows="10"
+              name="user_comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="contact-input-wrapper">
+            <input type="checkbox" name="accept_terms" id="accept_terms" />
+            <label class="contact-label" for="accept_terms">
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="contact-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 

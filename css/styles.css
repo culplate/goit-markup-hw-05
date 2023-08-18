@@ -715,6 +715,34 @@ footer {
   fill: #fff;
 }
 
+/* CONTACT FORM */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 72px 24px 24px;
+}
+.contact-title {
+  align-self: center;
+}
+.contact-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-label {
+}
+.contact-input {
+}
+.privacy-policy-link {
+}
+.contact-btn {
+}
+
 /* SUBSCRIBE FORM */
 
 .subscribe-form {
