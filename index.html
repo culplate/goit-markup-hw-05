@@ -521,7 +521,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-hidden" data-modal>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button class="closemodal" type="button" data-modal-close>
           <svg class="close-icon icon" width="8" height="8">
@@ -529,41 +529,55 @@
           </svg>
         </button>
 
-        <form class="contact-form" name="contact_form">
-          <strong class="contact-title">
-            Leave your contacts and we will call you back
-          </strong>
+        <p class="contact-title">
+          Leave your contacts and we will call you back
+        </p>
 
+        <form class="contact-form" name="contact_form">
+          <label for="user_name" class="contact-label">Name</label>
           <div class="contact-input-wrapper">
-            <label for="user_name" class="contact-label">Name</label>
-            <input id="user_name" type="text" class="contact-input" />
+            <input
+              id="user_name"
+              type="text"
+              class="contact-input"
+              name="user_name"
+            />
+            <svg class="contact-icon icon" width="18" height="18">
+              <use href="./images/icons.svg#name-icon"></use>
+            </svg>
           </div>
 
+          <label for="user_tel" class="contact-label">Phone</label>
           <div class="contact-input-wrapper">
-            <label for="user_tel" class="contact-label">Phone</label>
             <input
               id="user_tel"
               type="tel"
               class="contact-input"
               name="user_tel"
             />
+            <svg class="contact-icon icon" width="18" height="18">
+              <use href="./images/icons.svg#tel-icon"></use>
+            </svg>
           </div>
 
+          <label for="user_mail" class="contact-label">Email</label>
           <div class="contact-input-wrapper">
-            <label for="user_mail" class="contact-label">Email</label>
             <input
               id="user_mail"
               type="email"
               class="contact-input"
               name="user_mail"
             />
+            <svg class="contact-icon icon" width="18" height="18">
+              <use href="./images/icons.svg#mail-icon"></use>
+            </svg>
           </div>
 
           <div class="contact-input-wrapper">
             <label for="user_comment" class="contact-label">Comment</label>
             <textarea
               id="user_comment"
-              class="contact-input"
+              class="contact-input contact-textarea"
               cols="30"
               rows="10"
               name="user_comment"
@@ -582,6 +596,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
