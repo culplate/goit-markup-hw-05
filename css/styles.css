@@ -729,9 +729,11 @@ footer {
 .contact-label {
   margin-bottom: 4px;
   font-family: inherit;
+  display: block;
 }
 
 .contact-title {
+  color: var(--dark-color);
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
@@ -744,17 +746,20 @@ footer {
 
 .contact-input {
   width: 360px;
-  padding: 11px 11px 11px 36px;
+  height: 40px;
+  padding: 11px 11px;
+  padding-left: 38px;
+  background-color: transparent;
 
-  outline: none;
+  outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-input:focus {
-  border: 1px solid var(--primary-brand-color);
+  border-color: var(--primary-brand-color);
 }
 
 .contact-input:focus + .contact-icon {
@@ -764,17 +769,23 @@ footer {
 .contact-textarea {
   resize: none;
   height: 120px;
-  padding: 11px 16px;
+  padding: 8px 16px;
+
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-textarea-wrapper {
+  margin-bottom: 16px;
 }
 
 .contact-label,
 .contact-textarea::placeholder {
   color: var(--subtle-color);
   font-family: inherit;
-
+  letter-spacing: 0.04em;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
 }
 
 .contact-icon {
