@@ -779,6 +779,7 @@ footer {
 }
 
 .contact-label,
+.contact-textarea,
 .contact-textarea::placeholder {
   color: var(--subtle-color);
   font-family: inherit;
