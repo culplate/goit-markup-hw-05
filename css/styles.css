@@ -755,7 +755,7 @@ footer {
 
 .subscribe-input {
   height: 40px;
-  min-width: 264px;
+  width: 264px;
   padding: 8px 16px;
 
   background-color: transparent;
@@ -767,8 +767,8 @@ footer {
   color: var(--white-background-color);
   font-family: var(--primary-font);
   font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .subscribe-input::placeholder {
@@ -785,7 +785,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  gap: 16px;
+  min-width: 165px;
   padding: 8px 24px;
   border-radius: 4px;
   background-color: var(--primary-brand-color);
@@ -794,4 +794,5 @@ footer {
 
 .subscribe-icon {
   fill: var(--white-background-color);
+  margin-left: 16px;
 }

@@ -501,12 +501,15 @@
         <div class="bottom-wrapper">
           <p class="social-m-heading">Subscribe</p>
           <form class="subscribe-form" name="subscribtion_form">
-            <input
-              class="subscribe-input input"
-              type="email"
-              name="subscribe"
-              placeholder="E-mail"
-            />
+            <label for="subscribe" class="subscribe-label">
+              <input
+                class="subscribe-input input"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+                id="subscribe"
+              />
+            </label>
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon icon" width="24" height="24">
@@ -527,9 +530,9 @@
         </button>
 
         <form class="contact-form" name="contact_form">
-          <legend class="contact-title">
+          <strong class="contact-title">
             Leave your contacts and we will call you back
-          </legend>
+          </strong>
 
           <div class="contact-input-wrapper">
             <label for="user_name" class="contact-label">Name</label>
