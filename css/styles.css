@@ -722,6 +722,10 @@ footer {
 .contact-form {
 }
 
+.input-container {
+  margin-bottom: 8px;
+}
+
 .contact-label {
   margin-bottom: 4px;
   font-family: inherit;
