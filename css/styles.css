@@ -252,16 +252,6 @@ footer {
   margin-bottom: 48px;
 }
 
-.order-btn {
-  background-color: var(--primary-brand-color);
-  color: var(--white-background-color);
-  padding: 16px 32px;
-  min-width: 169px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* BENEFITS SECTION */
 
 .benefits-section {
@@ -531,13 +521,35 @@ footer {
 
 .order-btn,
 .filters-btn,
-.subscribe-btn {
+.subscribe-btn,
+.contact-btn {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   font-family: var(--primary-font);
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+.order-btn {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-btn,
+.contact-btn {
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+}
+
+.contact-btn {
+  height: 56px;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-btn {
@@ -568,7 +580,9 @@ footer {
 .order-btn:hover,
 .order-btn:focus,
 .subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:focus,
+.contact-btn:hover,
+.contact-btn:focus {
   background-color: var(--pressed-state-color);
 }
 
@@ -730,6 +744,7 @@ footer {
   margin-bottom: 4px;
   font-family: inherit;
   display: block;
+  color: var(--subtle-color);
 }
 
 .contact-title {
@@ -740,6 +755,7 @@ footer {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+
 .contact-input-wrapper {
   position: relative;
 }
@@ -781,7 +797,6 @@ footer {
 .contact-label,
 .contact-textarea,
 .contact-textarea::placeholder {
-  color: var(--subtle-color);
   font-family: inherit;
   letter-spacing: 0.04em;
   font-size: 12px;
@@ -799,13 +814,44 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.privacy-policy-link {
+.privacy-checkbox-wrapper {
+  margin-bottom: 24px;
 }
-.contact-btn {
-  padding: 16px 32px;
-  min-width: 169px;
-  margin: 0 auto;
-  display: block;
+
+.privacy-label {
+}
+
+.privacy-checkbox {
+  width: 16px;
+  height: 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-checkbox-hidden:checked ~ * .privacy-checkbox {
+  background-color: var(--pressed-state-color);
+  border: none;
+  fill: var(--modal-background-color);
+}
+
+.check-icon {
+  /* fill: transparent; */
+}
+
+.privacy-policy-link {
+  color: var(--primary-brand-color);
+  line-height: 1.3;
+  letter-spacing: 0.04em;
 }
 
 /* SUBSCRIBE FORM */

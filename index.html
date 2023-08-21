@@ -591,9 +591,20 @@
             ></textarea>
           </div>
 
-          <div class="contact-input-wrapper">
-            <input type="checkbox" name="accept_terms" id="accept_terms" />
-            <label class="contact-label" for="accept_terms">
+          <div class="contact-input-wrapper privacy-checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="privacy-checkbox-hidden visually-hidden"
+            />
+            <label class="contact-label privacy-label" for="user-privacy">
+              <span class="privacy-checkbox">
+                <svg class="check-icon icon" width="10" height="8">
+                  <use href="./images/icons.svg#check-icon"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a class="privacy-policy-link" href="">Privacy Policy</a>
             </label>
