@@ -841,7 +841,7 @@ footer {
 .privacy-checkbox-hidden:checked ~ * .privacy-checkbox {
   background-color: var(--pressed-state-color);
   border: none;
-  fill: var(--modal-background-color);
+  fill: var(--light-color);
 }
 
 .check-icon {
